@@ -1,12 +1,11 @@
 {
   "name": "studio-utils",
-  "version": "0.61.0",
+  "version": "0.0.1",
   "description": "Easy shared types",
   "main": "./dist/index.js",
   "directories": {
     "dist": "dist"
   },
-  "repository": "https://github.com/flow-build/studio-utils",
   "scripts": {
     "build": "rimraf dist && microbundle-crl --format modern,cjs",
     "type:check": "tsc -p ./tsconfig.json --noEmit",
