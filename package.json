@@ -11,7 +11,8 @@
     "type:check": "tsc -p ./tsconfig.json --noEmit",
     "lint:check": "eslint './src/**/*.{js,ts}' --fix && prettier './src/**/*.{js,ts}' --check",
     "lint:fix": "eslint './src/**/*.{js,ts}' --fix && prettier './src/**/*.{js,ts}' --write",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "rimraf dist && microbundle-crl --format modern,cjs"
   },
   "peerDependencies": {
     "typescript": ">=4.8.3"
